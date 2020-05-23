@@ -20,7 +20,7 @@ let stepperDispatcher = StepperDispatcher.pure { input in
         }^
     
     case .tapIncrement:
-        return .modify { state in
+        return .modify { state in
             StepperState(count: state.count + 1)
         }^
     }
